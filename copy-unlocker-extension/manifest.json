@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Unlocker",
+  "version": "0.1.0",
+  "description": "Restore text selection, copy, and context menu on pages that block them.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "unlock.css"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ]
+}
